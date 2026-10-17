@@ -2,10 +2,9 @@
 
 const venues = [
   {
-    title: "Hotel Marudhar Palace",
-    // place: "Hotel Marudhar Palace",
+    title: "Pai Vista Convention Hall",
     image: "/assets/marudhar.webp",
-    link: "https://maps.app.goo.gl/TxqSAhseHFbnyNe99",
+    link: "https://maps.app.goo.gl/t5B3mwdEWrPQpjst6",
   },
 
 

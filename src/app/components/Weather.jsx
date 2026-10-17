@@ -1,18 +1,14 @@
 "use client";
 
 const days = [
-  { date: "4 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "5 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "30 Oct", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "5 Nov", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [
-  "Mona - Raj Kumar Tawri",
-  "Rashmi - Shiv Kumar Tawri",
-  "Neha - Rohan",
-  "and Tawri Family",
+  "Kartik - Raksha and our family",
 ];
 
-const regardsNames = ["Palak - Ankit ji", "Priya - Rakshit ji"];
 
 export default function Weather() {
   return (
@@ -29,11 +25,11 @@ export default function Weather() {
           className="text-[#B35800] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Bikaner Weather
+          Bangalore Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">
-          December brings sunny days, pleasant afternoons and cool desert
+          October and November brings sunny days, pleasant afternoons and cool desert
           evenings.
         </p>
 
@@ -86,32 +82,11 @@ export default function Weather() {
           ))}
         </div>
 
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
+      
 
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          Special Request
-        </p>
-
-        <div className="mt-4 space-y-3">
-          {regardsNames.map((name) => (
-            <p
-              key={name}
-              className="text-xl md:text-2xl text-[#f6e6dc] font-serif"
-            >
-              {name}
-            </p>
-          ))}
-        </div>
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          MATERNAL SIDE
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Shri Narendra Kumar & Shri Pawan Kumar Jhawar
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Vaani tawri-mere chachu ke shadi mae jrur jrur aana….
-        </p>
+       
+      
+        
       </div>
     </section>
   );

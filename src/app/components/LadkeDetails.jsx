@@ -14,19 +14,19 @@ export default function LadkeDetails() {
   return (
     <div className="mx-auto w-full max-w-4xl text-center md:p-2">
       <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        With the blessings of Smt. Vimla Devi Tawri & Late Shri Chotu Lal Ji Tawri
+        With the Blessings of Gurus and Divine Grace
       </p> <br />
       <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        We cordially invite you to the wedding ceremony of their Grandson
+        We cordially invite you to the wedding ceremony of
       </p>
 
       <div className="mt-8 text-center">
         <h2 className="text-[#B35800] font-pinyon-script text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight font-bold">
-          Aditya Tawri
+          Karthik
         </h2>
 
         <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (S/o Smt. Kusum Lata Tawri & Shri Kishan Kumar Tawri)
+          (S/o Smt. Gayathri & Shri Lakshminarayana Rao)
         </p>
 
         <h2 className="text-[#B35800] font-pinyon-script text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold">
@@ -34,11 +34,11 @@ export default function LadkeDetails() {
             With
           </span>
           <br />
-          Priyanka Dwarkani
+          Raksha
         </h2>
 
         <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Smt. Rakhi Dwarkani & Shri Kamal Ji Dwarkani )
+          (D/o Smt. Sandhya & Shri Manjunath )
         </p>
 
         <ScratchText onReveal={() => setRevealed(true)} />
@@ -50,7 +50,7 @@ export default function LadkeDetails() {
 )}
 
         <Events />
-        <Wardrobe />
+        {/* <Wardrobe /> */}
         <PhotoGallery />
         <Weather />
         <Venues />

@@ -9,6 +9,8 @@ const images = [
   "/assets/couple3.jpg",
   "/assets/couple4.jpg",
   "/assets/couple5.jpg",
+  "/assets/couple6.jpg",
+  "/assets/couple7.jpg",
 ];
 
 const N = images.length;
@@ -29,7 +31,7 @@ export default function PhotoGallery() {
   };
 
   return (
-    <section id="photos" className="w-full scroll-mt-6 overflow-x-clip">
+    <section id="photos" className="w-full scroll-mt-6 overflow-x-clip  mt-30">
       {/* Heading */}
       <div className="flex flex-col justify-center mt-0 lg:mt-20 items-center">
         <p className="md:text-2xl text-[16px] text-[#B35800] font-cormorant-garamond">
@@ -68,13 +70,21 @@ export default function PhotoGallery() {
                   zIndex: isFlipped ? index : 2 * N - index,
                 }}
               >
-                <img
+                {/* <img
                   src={src}
                   alt={`Gallery ${index + 1}`}
                   draggable={false}
                   className="w-full h-full object-contain rounded-r-2xl rounded-l-sm"
                   style={{ backfaceVisibility: "hidden" }}
-                />
+                /> */}
+
+                <img
+  src={src}
+  alt={`Gallery ${index + 1}`}
+  draggable={false}
+  className="w-full h-full object-cover rounded-r-2xl rounded-l-sm"
+  style={{ backfaceVisibility: "hidden" }}
+/>
 
                 {/* Spine shadow */}
                 <div className="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/30 to-transparent rounded-l-sm pointer-events-none" />
