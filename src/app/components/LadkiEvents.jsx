@@ -19,7 +19,7 @@ export default function LadkiEvents() {
       <h2 className="text-white bg-[#B35800] font-cormorant-garamond text-[20px] md:text-xl lg:text-[30px] mt-5 border px-8 py-2 rounded-xl">
         Friday, 30th October 2026
       </h2>
-      <div className="flex flex-col bg-[#E6B325] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-6">
+      <div className="flex flex-col bg-[#D9825B] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-6">
         <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[23px] md:text-2xl lg:text-[50px] leading-7">
           Linga Bhairavi Vivaha and Bhuta Shuddi Vivaha
         </h2>
