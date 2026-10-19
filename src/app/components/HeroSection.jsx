@@ -56,14 +56,14 @@ export default function HeroSection() {
         </div>
 
         {/* ================= BUTTONS ================= */}
-        <div className="mt-8 flex w-full max-w-[500px] flex-col items-center justify-center gap-4 sm:flex-row md:mt-10">
+        <div className="mt-8 flex w-full max-w-[500px] flex-row items-center justify-center gap-4 sm:flex-row md:mt-10">
 
           {/* LADKE */}
           <button
             type="button"
             onClick={() => setSelectedSide("ladke")}
             className={`
-              w-full max-w-[220px]
+              w-full max-w-[140px]
               rounded-full
               px-8 py-3
               text-xs tracking-[0.12em]
@@ -87,7 +87,7 @@ export default function HeroSection() {
             type="button"
             onClick={() => setSelectedSide("ladki")}
             className={`
-              w-full max-w-[220px]
+              w-full max-w-[140px]
               rounded-full
               px-8 py-3
               text-xs tracking-[0.12em]

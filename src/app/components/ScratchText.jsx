@@ -309,7 +309,7 @@ export default function ScratchText({ onReveal }) {
           textShadow: "0 1px 6px rgba(255,215,0,.35)",
         }}
       >
-        30Oct<sup className="text-[16px]">th</sup>&5<sup className="text-[16px]">th</sup>Nov
+        30Oct<sup className="text-[16px]">th </sup> <span className="px-2">&</span> 5 <sup className="text-[16px]">th</sup>Nov
       </div>
 
       <canvas

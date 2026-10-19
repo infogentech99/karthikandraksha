@@ -17,7 +17,7 @@ export default function LadkeDetails() {
         With the Blessings of Gurus and Divine Grace
       </p> <br />
       <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        We cordially invite you to the wedding ceremony of
+        We cordially invite you to the wedding get together
       </p>
 
       <div className="mt-8 text-center">
@@ -38,7 +38,7 @@ export default function LadkeDetails() {
         </h2>
 
         <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Smt. Sandhya & Shri Manjunath )
+          (D/o Smt. Sandhya & Shri Muralidhar Manjunath )
         </p>
 
         <ScratchText onReveal={() => setRevealed(true)} />

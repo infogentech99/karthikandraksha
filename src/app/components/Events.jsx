@@ -20,7 +20,7 @@ export default function Events() {
         Friday, 30th October 2026
       </h2>
       <div className="flex flex-col bg-[#D9825B] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-6">
-        <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[23px] md:text-2xl lg:text-[50px] leading-7">
+        <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[23px] md:text-2xl lg:text-[50px] leading-7 md:leading-12">
           Linga Bhairavi Vivaha and Bhuta Shuddi Vivaha
         </h2>
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
@@ -29,10 +29,11 @@ export default function Events() {
 
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
           <span className="text-[17px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-           Isha ashram
+            Isha ashram
           </span>
           <br />
-          Yoga Center Velliangiri Foothills, Ishana Vihar Post, Coimbatore, Tamil Nadu 641114
+          Yoga Center Velliangiri Foothills, Ishana Vihar Post, Coimbatore,
+          Tamil Nadu 641114
         </p>
 
         <a
@@ -75,7 +76,8 @@ export default function Events() {
             Pai Vista Convention Hall, South End Circle
           </span>
           <br />
-          Metro, Pattalamma Temple Rd, near South End Circle, Basavanagudi, Bengaluru, Karnataka 560004
+          Metro, Pattalamma Temple Rd, near South End Circle, Basavanagudi,
+          Bengaluru, Karnataka 560004
         </p>
 
         <a
@@ -85,6 +87,20 @@ export default function Events() {
         >
           View Location
         </a>
+      </div>
+
+      <div className="flex flex-col justify-center items-center bg-[#7F1D2E] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
+        <img
+          src="/assets/valet.png"
+          alt="Shree Ganesh"
+          className="w-[60px] sm:w-[65px] md:w-[150px]"
+        />
+        <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
+          Parking
+        </h2>
+        <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
+          Valet parking for all our guests will be available at the venue
+        </p>
       </div>
     </div>
   );

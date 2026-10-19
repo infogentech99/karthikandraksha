@@ -17,7 +17,7 @@ export default function LadkiDetails() {
         With the Blessings of Gurus and Divine Grace
       </p> <br />
       <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        We cordially invite you to the wedding ceremony of
+        We cordially invite you to the wedding get together
       </p>
 
       <div className="mt-8 text-center">
@@ -26,7 +26,7 @@ export default function LadkiDetails() {
         </h2>
 
         <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Smt. Sandhya & Shri Manjunath)
+          (D/o Smt. Sandhya & Shri Muralidhar Manjunath)
         </p>
 
         <h2 className="text-[#B35800] font-pinyon-script text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold">
