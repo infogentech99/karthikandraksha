@@ -30,7 +30,7 @@ export default function LadkiDetails() {
         </p>
 
         <h2 className="text-[#B35800] font-pinyon-script text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold">
-          <span className="text-[#B35800] font-cormorant-garamond text-center md:text-3xl text-[28px] lg:text-[36px] leading-tight font-medium">
+          <span className="text-[#B35800] font-cormorant-garamond text-center md:text-3xl text-[24px] lg:text-[36px] leading-tight font-medium">
             With
           </span>
           <br />
