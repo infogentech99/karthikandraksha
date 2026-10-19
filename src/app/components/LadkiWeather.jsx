@@ -6,7 +6,7 @@ const days = [
 ];
 
 const requestNames = [
-  "Karthik - Raksha and Our family",
+  "Karthik - Raksha and Our Family",
   
 ];
 
