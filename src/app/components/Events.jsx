@@ -49,6 +49,21 @@ export default function Events() {
         </a>
       </div>
 
+
+ <div className="flex flex-col justify-center items-center bg-[#7F1D2E] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
+        <img
+          src="/assets/valet.png"
+          alt="Shree Ganesh"
+          className="w-[60px] sm:w-[65px] md:w-[150px]"
+        />
+        <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
+          Parking
+        </h2>
+        <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
+          Valet parking for all our guests will be available at the venue
+        </p>
+      </div>
+      
       <div className="flex items-center w-full mt-16 mb-13">
         <div className="flex-1">
           <div className="border-t-2 border-[#B35800]" />
@@ -92,19 +107,7 @@ export default function Events() {
         </a>
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-[#7F1D2E] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-        <img
-          src="/assets/valet.png"
-          alt="Shree Ganesh"
-          className="w-[60px] sm:w-[65px] md:w-[150px]"
-        />
-        <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-          Parking
-        </h2>
-        <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-          Valet parking for all our guests will be available at the venue
-        </p>
-      </div>
+     
     </div>
   );
 }
