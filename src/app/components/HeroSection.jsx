@@ -1,16 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LadkeDetails from "../components/LadkeDetails";
 import LadkiDetails from "../components/LadkiDetails";
 import RoseHeroTemp from "../components/RoseHeroTemp";
 import BottomNavigation from "../components/BottomNavigation";
 export default function HeroSection() {
   const [selectedSide, setSelectedSide] = useState(null);
+  const [showScroll, setShowScroll] = useState(true);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY < 20);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section id="home" className="relative min-h-screen w-full scroll-mt-0">
-
       {/* ================= BACKGROUND ================= */}
       <div
         className="fixed inset-0 z-0 h-screen w-full bg-[#faf4e8] bg-cover bg-center bg-no-repeat"
@@ -20,12 +33,11 @@ export default function HeroSection() {
         }}
       />
 
-  <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
-    <RoseHeroTemp />
-  </div>
+      <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
+        <RoseHeroTemp />
+      </div>
       {/* ================= CONTENT ================= */}
       <div className="relative z-10 flex min-h-screen w-full flex-col items-center px-10 py-10 pb-28 sm:px-8 md:px-12 lg:px-16 mt-10">
-
         {/* ================= GANESH ================= */}
         <div className="mt-4 flex justify-center md:mt-8">
           <img
@@ -57,7 +69,6 @@ export default function HeroSection() {
 
         {/* ================= BUTTONS ================= */}
         <div className="mt-8 flex w-full max-w-[500px] flex-row items-center justify-center gap-4 sm:flex-row md:mt-10">
-
           {/* LADKE */}
           <button
             type="button"
@@ -96,7 +107,7 @@ export default function HeroSection() {
               sm:w-[200px]
               md:w-[220px] md:py-3.5 md:text-sm
               cursor-pointer font-cormorant-garamond uppercase
-              ${ 
+              ${
                 selectedSide === "ladki"
                   ? "scale-105 bg-[#B35800] shadow-lg"
                   : "bg-[#B35800] hover:scale-105 hover:bg-[#B35800]"
@@ -105,22 +116,58 @@ export default function HeroSection() {
           >
             Team Raksha
           </button>
-
         </div>
 
         {/* ================= SELECTED DETAILS ================= */}
         {selectedSide && (
           <div className="mt-12 w-full max-w-5xl pb-10 md:mt-16">
+       {/* ================= SCROLL DOWN ================= */}
+<div
+  className={`fixed bottom-24 left-1/2 z-30
+    -translate-x-1/2 flex flex-col items-center
+    transition-all duration-500
+    ${
+      showScroll
+        ? "translate-y-0 opacity-100"
+        : "pointer-events-none translate-y-4 opacity-0"
+    }`}
+>
+  <button
+    type="button"
+    onClick={() => {
+      window.scrollBy({
+        top: window.innerHeight * 0.7,
+        behavior: "smooth",
+      });
+    }}
+    className="flex flex-col items-center gap-2 text-[#B35800]"
+    aria-label="Scroll down to explore"
+  >
+    <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#B35800] bg-[#FFF8EB]/80">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m7 10 5 5 5-5" />
+        <path d="m7 5 5 5 5-5" />
+      </svg>
+    </span>
 
-            {selectedSide === "ladke" ? (
-              <LadkeDetails />
-            ) : (
-              <LadkiDetails />
-            )}
+    <span className="animate-pulse text-[11px] tracking-[2px] font-cormorant-garamond">
+      SCROLL DOWN
+    </span>
+  </button>
+</div>
 
+            {selectedSide === "ladke" ? <LadkeDetails /> : <LadkiDetails />}
           </div>
         )}
-
       </div>
       {selectedSide && <BottomNavigation />}
     </section>
