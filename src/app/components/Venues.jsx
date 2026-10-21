@@ -2,9 +2,9 @@
 
 const venues = [
   {
-    title: "Pai Vista Convention Hall",
+    title: "Pai Vista Convention Hall, South End Circle",
     image: "/assets/marudhar.webp",
-    link: "https://maps.app.goo.gl/t5B3mwdEWrPQpjst6",
+    link: "https://maps.app.goo.gl/8cWkZ4vCTL1Gga2R7",
   },
 
 
