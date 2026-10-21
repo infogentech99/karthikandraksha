@@ -123,7 +123,7 @@ export default function HeroSection() {
           <div className="mt-12 w-full max-w-5xl pb-10 md:mt-16">
        {/* ================= SCROLL DOWN ================= */}
 <div
-  className={`fixed bottom-24 left-1/2 z-30
+  className={`fixed bottom-20 left-1/2 z-30
     -translate-x-1/2 flex flex-col items-center
     transition-all duration-500
     ${
