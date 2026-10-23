@@ -28,7 +28,7 @@ export default function Events() {
           Meet and Greet
         </h2>
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-          7:00 pm to 10:00 pm onwards
+          7:00 pm to 10:00 pm
         </p>
 
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
@@ -86,7 +86,7 @@ export default function Events() {
           Linga Bhairavi Vivaha and Bhuta Shuddi Vivaha
         </h2>
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-          6 am to 10:30 am onwards
+          6 am to 10:30 am
         </p>
 
         <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
